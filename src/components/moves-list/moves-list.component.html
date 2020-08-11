@@ -1,0 +1,11 @@
+<section class="moves-list flex column align-center">
+    <h4>Your Last Transactions</h4>
+    <ul class="clean-list">
+        <li *ngFor="let move of user.moves">
+            <p> <i class="fas fa-user"></i> {{move.name}} </p>
+            <p> <i class="fab fa-bitcoin"></i> {{move.amount}}</p>
+            <p> <i class="far fa-clock"></i> {{move.time | date:'shortDate'  }}</p>
+        </li>
+    </ul>
+    <h5 *ngIf="!user.moves.length" >No Transactions To Show</h5>
+</section>

@@ -1,0 +1,5 @@
+<div class="contact-preview flex space-between align-center "> 
+    <img [src]="imagePath"/>
+    <p>{{contact.name}}</p> 
+    <button (click)="onDelete($event , contact._id)"><i class="far fa-trash-alt"></i></button>
+</div>

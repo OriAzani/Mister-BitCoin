@@ -1,0 +1,17 @@
+.dashboard-container{
+   h2{
+    //    padding:;
+   }
+    height: 100vh;
+    div {
+        border-top:1px solid lightgray;
+        width: 90%;
+        height: 40%;
+        padding: 10px;
+
+        .google-chart {
+            width: 90%;
+            height: 90%;
+        }
+    }
+}

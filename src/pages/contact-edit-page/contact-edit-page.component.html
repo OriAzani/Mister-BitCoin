@@ -1,0 +1,15 @@
+<section class="contact-edit flex column align-center">
+ 
+    <h2 *ngIf=contactToEdit.name>Edit Contact</h2>
+    <img *ngIf=contactToEdit.name [src]="imagePath" width="200px" height="200px"/>
+    <h2 *ngIf=!contactToEdit.name>Add Contact</h2>
+    
+
+    <form class="flex column" (submit)="saveContact($event)">
+        <input type="text" name="name" [(ngModel)]="contactToEdit.name"  placeholder="Add Name"/>
+        <input type="text" name="email" [(ngModel)]="contactToEdit.email" placeholder="Add email"/>
+        <input type="text" name="phone" [(ngModel)]="contactToEdit.phone" placeholder="Add phone"/>
+        <input type="submit" value="Save">  
+    </form>
+
+</section>

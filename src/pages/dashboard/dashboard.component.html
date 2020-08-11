@@ -1,0 +1,34 @@
+<section class="dashboard-container flex column align-center">
+   <h2>Bitcoin Statistics</h2>
+   
+   <div class="flex column align-center">
+   
+   <select (change)=setMonthSpan($event)>
+      <option value="1">By Month</option>
+      <option value="6"> By 6 Months</option>
+      <option value="12">By Year</option>
+   </select>
+   
+   <google-chart #chart class="google-chart"
+      [title]="marketValue.title"
+      [type]="marketValue.type"
+      [data]="marketValue.data"
+      [options]="marketValue.options">
+   </google-chart>
+   </div>
+   
+   <div class="flex column align-center">
+      <select (change)=setDaySpan($event)>
+         <option value="1">Daily</option>
+         <option selected value="7">Weekly</option>
+         <option value="30">Monthly</option>
+      </select>
+      
+      <google-chart #chart  class="google-chart"
+         [title]="confirmedTransactions.title"
+         [type]="confirmedTransactions.type"
+         [data]="confirmedTransactions.data"
+         [options]="confirmedTransactions.options">
+      </google-chart>
+   </div>
+</section>

@@ -1,0 +1,10 @@
+<section class="homepage flex column align-center">
+
+    <img [src]="imagePath" alt="">
+    <h2>Hello {{user.name | titlecase}}!</h2>
+    <p><i class="fab fa-bitcoin"></i> Coins: {{user.coins}}</p>
+    <p><i class="fas fa-comments-dollar"></i> Bitcoin Rate : {{bitcoinRate}}</p> 
+
+
+    <moves-list></moves-list>
+</section>

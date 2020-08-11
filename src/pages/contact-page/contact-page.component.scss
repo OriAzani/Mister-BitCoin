@@ -1,0 +1,16 @@
+.contact-header{
+    width: 300px;
+    margin-bottom: 10px;
+  
+}
+
+.add-contact{
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    padding: 7px;
+    transition: .2s;
+    &:hover{
+        background-color: rgba(188, 219, 255, 0.788);
+    }
+}
+    

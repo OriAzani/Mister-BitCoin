@@ -1,0 +1,31 @@
+.contact-preview {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px 0px ;
+    background-color: rgba(224, 227, 231, 0.788);
+    transition: .1s ease-in-out;
+    &:hover{
+        transform: scale(1.05)
+    }
+       img{
+        background-color: rgba(188, 219, 255, 0.788);
+        width: 40px;
+        height: 40px;
+        padding: 0px 6px 6px 6px;
+        border-right: 1px solid lightgrey;
+        margin-right: 5px;
+    }
+
+    button{
+        width: 40px;
+        border-left: 1px solid lightgrey;
+        border-radius: 0px 5px 5px 0px;
+        height: 40px;
+        transition: .2s;
+
+        &:hover{
+        background-color: red;
+        }
+    }
+}

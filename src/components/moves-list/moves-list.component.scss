@@ -1,0 +1,21 @@
+.moves-list{
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 360px;
+  ul{
+
+     li{
+      padding: 10px 0px;
+      border-bottom: .3px solid lightgrey;
+      p{
+          display: inline-block;
+          margin: 5px;
+      }
+     }
+ }
+ h5{
+     color: red;
+ }
+}
