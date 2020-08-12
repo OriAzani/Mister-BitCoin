@@ -1,10 +1,13 @@
 .header{
 
-    padding:10px;
+    padding:20px;
     margin-bottom: 20px;
     border-bottom: 1px solid lightgray;
     background-color: #d4d4f7;
 ul{
+    span{
+    margin: 5px;
+    }
     a{
         margin: 10px;
     }
@@ -18,4 +21,12 @@ img{
           margin-left: 10px;
       }  
     }
+}
+@media only screen and (max-width: 600px) {
+    ul{
+        span{
+            display: none;
+        }
+    }
+
 }
